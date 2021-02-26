@@ -6,6 +6,7 @@ export const GET_STORE_CONFIG_DATA = gql`
             id
             code
             store_name
+            locale
         }
     }
 `;

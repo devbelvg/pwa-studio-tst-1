@@ -2,7 +2,7 @@ import React from 'react';
 import { shape, string } from 'prop-types';
 import { MapPin } from 'react-feather';
 
-import { useStoreSwitcher } from '@magento/peregrine/lib/talons/Header/useStoreSwitcher';
+import { useStoreSwitcher } from '../Peregrine/Talons/Header/useStoreSwitcher';
 
 import { mergeClasses } from '@magento/venia-ui/lib/classify';
 import defaultClasses from './storeSwitcher.css';
@@ -19,6 +19,7 @@ const StoreSwitcher = props => {
     const {
         handleSwitchStore,
         currentStoreName,
+        currentStoreLocale,
         availableStores,
         storeMenuRef,
         storeMenuTriggerRef,
@@ -34,7 +35,6 @@ const StoreSwitcher = props => {
     const stores = [];
 
     availableStores.forEach((store, code) => {
-        console.log(store);
         stores.push(
             <li key={code} className={classes.menuItem}>
                 <SwitcherItem
@@ -51,13 +51,13 @@ const StoreSwitcher = props => {
     return (
         <div className={classes.root}>
             <button
+                className={classes.storebutton}
                 aria-label={currentStoreName}
                 onClick={handleTriggerClick}
                 ref={storeMenuTriggerRef}
             >
                 <span className={classes.trigger}>
-                    <Icon src={MapPin} />
-                    <span>{currentStoreName}</span>
+                    <span><StoreFlag locale={currentStoreLocale} /></span>
                 </span>
             </button>
             <div ref={storeMenuRef} className={menuClassName}>
