@@ -1,6 +1,5 @@
 import React from 'react';
 import { shape, string } from 'prop-types';
-import { MapPin } from 'react-feather';
 
 import { useStoreSwitcher } from '../Peregrine/Talons/Header/useStoreSwitcher';
 
@@ -8,7 +7,6 @@ import { mergeClasses } from '@magento/venia-ui/lib/classify';
 import defaultClasses from './storeSwitcher.css';
 import SwitcherItem from './switcherItem';
 import storeSwitcherOperations from './storeSwitcher.gql';
-import Icon from '@magento/venia-ui/lib/components/Icon';
 import StoreFlag from './storeFlag';
 
 const StoreSwitcher = props => {
