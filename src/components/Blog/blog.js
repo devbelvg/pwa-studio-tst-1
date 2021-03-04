@@ -14,6 +14,12 @@ const Blog = () => {
         allPostsData
     } = talonProps;
 
+    // filter: {
+    //     store_ids : {
+    //         like : "0"
+    //     }
+    // }
+
     const classes = mergeClasses(defaultClasses);
 
     const posts = allPostsData.mpBlogPosts.items;

@@ -9,8 +9,12 @@ import { mergeClasses } from '@magento/venia-ui/lib/classify';
 const Post = (props) => {
     const { name, image, description, date, url } = props;
     const mediaUrl = process.env.MAGENTO_BACKEND_URL + 'pub/media/mageplaza/blog/post/';
-    const postDate = date.split(' ');
     const classes = mergeClasses(defaultClasses);
+    const formattedDate = (date) => {
+        const postDate = date.split(' ');
+        return postDate[0];
+    }
+
     return (
         <div className={classes.postWrap}>
             <div className={classes.postItem}>
@@ -27,7 +31,7 @@ const Post = (props) => {
                 <div className={classes.postInfo}>
                     <div className={classes.postInfoItem}>
                         <span className={classes.postInfoIcon}><Icon src={CalendarIcon} size={16} /></span>
-                        <span className={classes.postInfoText}>{postDate[0]}</span>
+                        <span className={classes.postInfoText}>{formattedDate(date)}</span>
                     </div>
                 </div>
                 <div className={classes.postDescription}>
