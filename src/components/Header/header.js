@@ -11,6 +11,8 @@ import SearchTrigger from './searchTrigger';
 import OnlineIndicator from './onlineIndicator';
 import { useHeader } from '@magento/peregrine/lib/talons/Header/useHeader';
 
+import MegaMenu from '../MegaMenu';
+
 import { mergeClasses } from '@magento/venia-ui/lib/classify';
 import defaultClasses from './header.css';
 import PageLoadingIndicator from '@magento/venia-ui/lib/components/PageLoadingIndicator';
@@ -83,6 +85,9 @@ const Header = props => {
                 </div>
                 {searchBar}
             </header>
+            <div>
+                <MegaMenu />
+            </div>
         </React.Fragment>
     );
 };
