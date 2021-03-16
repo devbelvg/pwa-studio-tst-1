@@ -5,7 +5,6 @@ import { useScrollLock } from '@magento/peregrine';
 import { mergeClasses } from '@magento/venia-ui/lib/classify';
 import Footer from '../Footer';
 import Header from '../Header';
-import Blog from '../Blog';
 import defaultClasses from './main.css';
 
 const Main = props => {
@@ -21,7 +20,6 @@ const Main = props => {
         <main className={rootClass}>
             <Header />
             <div className={pageClass}>{children}</div>
-            <Blog />
             <Footer />
         </main>
     );

@@ -3,7 +3,7 @@ import { useBlog } from '../Peregrine/Talons/Blog/useBlog';
 import getAllPosts from './getAllPosts.gql';
 import defaultClasses from './blog.css';
 import { mergeClasses } from '@magento/venia-ui/lib/classify';
-import Post from './post';
+import Post from './post'
 
 const Blog = () => {
     const talonProps = useBlog({

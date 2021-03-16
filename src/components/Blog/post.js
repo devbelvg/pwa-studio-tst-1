@@ -23,7 +23,7 @@ const Post = (props) => {
                 </div>
                 <div className={classes.postName}>
                     <h2>
-                        <Link to={url} alt={name} className={classes.postLink} title={name} >
+                        <Link to={`/blog/${url}`} alt={name} className={classes.postLink} title={name} >
                             {name}
                         </Link>
                     </h2>
@@ -38,7 +38,7 @@ const Post = (props) => {
                     <p>{description}</p>
                 </div>
                 <div className={classes.postButton}>
-                    <Link to={url} alt={name} className={classes.postLink} title={name} >
+                    <Link to={`/blog/${url}`} alt={name} className={classes.postLink} title={name} >
                             Read more...
                     </Link>
                 </div>

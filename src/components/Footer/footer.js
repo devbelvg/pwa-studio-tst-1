@@ -47,8 +47,8 @@ const Footer = props => {
     return (
         <footer className={classes.root}>
             <div className={classes.links}>
-                <Link to="https://belvg.com">
-                    <span className={classes.label}>Foo Demo Page</span>
+                <Link to="/blog.html">
+                    <span className={classes.label}>Our Blog</span>
                 </Link>
                 {linkGroups}
                 <div className={classes.callout}>
