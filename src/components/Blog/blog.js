@@ -32,7 +32,13 @@ const Blog = () => {
                 />
         );
     });
-   
+
+    const settings = {
+        showDots: true,
+        infinite: false,
+        showArrows: true,
+      };
+
     return (
         <div className={classes.root}>
             {post}

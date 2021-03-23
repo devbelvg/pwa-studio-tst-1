@@ -6,6 +6,7 @@ import { mergeClasses } from '@magento/venia-ui/lib/classify';
 import Footer from '../Footer';
 import Header from '../Header';
 import defaultClasses from './main.css';
+import { BrandsSlider } from '@belvg/shopbybrand';
 
 const Main = props => {
     const { children, isMasked } = props;
@@ -15,11 +16,13 @@ const Main = props => {
     const pageClass = isMasked ? classes.page_masked : classes.page;
 
     useScrollLock(isMasked);
-
     return (
         <main className={rootClass}>
             <Header />
-            <div className={pageClass}>{children}</div>
+            <BrandsSlider />
+            <div className={pageClass}>
+                {children}
+            </div>
             <Footer />
         </main>
     );

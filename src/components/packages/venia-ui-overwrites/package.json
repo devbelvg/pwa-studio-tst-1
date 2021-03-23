@@ -1,0 +1,20 @@
+
+{
+    "name": "@belvg/venia-ui-overwrites",
+    "version": "1.0.2",
+    "description": "",
+    "author": "Sergey Voinich <s.voinicht@belvg.com>",
+    "license": "MIT",
+    "pwa-studio": {
+      "targets": {
+        "intercept": "intercept.js"
+      }
+    },
+    "peerDependencies": {
+      "@magento/pwa-buildpack": "*",
+      "@magento/venia-ui": "*",
+      "react": "~16.9.0",
+      "react-router-dom": "~5.1.0"
+    },
+    "main": "./lib/components/ProductFullDetail/productFullDetail.js"
+  }

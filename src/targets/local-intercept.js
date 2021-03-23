@@ -9,12 +9,12 @@ module.exports = targets => {
       name: "PostPage",
       pattern: "/blog/:url_key?",
       path: require.resolve("../components/Blog/postPage.js")
-  });
+    });
     routes.push({
       name: "Cart",
       pattern: "/cart",
       path: require.resolve("../components/CartPage/cartPage.js")
-  });
+    });
     return routes;
   });
 };
