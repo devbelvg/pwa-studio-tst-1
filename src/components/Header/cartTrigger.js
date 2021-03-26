@@ -57,7 +57,7 @@ const CartTrigger = props => {
                     className={classes.trigger}
                     onClick={handleTriggerClick}
                 >
-                    <Icon src={ShoppingCartIcon} />
+                    <Icon src={ShoppingCartIcon} /> 
                     {maybeItemCounter}
                 </button>
             </div>

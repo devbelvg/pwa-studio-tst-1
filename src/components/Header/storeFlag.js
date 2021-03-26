@@ -10,10 +10,9 @@ class StoreFlag extends React.Component {
             getStoreFlag = (storeLocaleArr[0] === 'en') ? storeLocaleArr[1] : storeLocaleArr[0];
 
         return (
-            <ReactCountryFlag countryCode={getStoreFlag} />
+            <ReactCountryFlag countryCode={getStoreFlag} svg/>
         );
     }
 }
 
 export default StoreFlag;
-

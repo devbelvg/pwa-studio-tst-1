@@ -1,0 +1,4 @@
+.root {
+    margin: 16px auto;
+    max-width: var(--venia-global-maxWidth);
+}

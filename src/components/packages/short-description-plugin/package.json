@@ -1,0 +1,20 @@
+
+{
+    "name": "@belvg/short-description-plugin",
+    "version": "1.0.1",
+    "description": "PWA Studio Component which fetches short description of a product and displays it on a Storefront",
+    "author": "Sergey Voinich <s.voinicht@belvg.com>",
+    "license": "MIT",
+    "pwa-studio": {
+      "targets": {
+        "intercept": "intercept.js"
+      }
+    },
+    "peerDependencies": {
+      "@magento/pwa-buildpack": "*",
+      "@magento/venia-ui": "*",
+      "react": "~16.9.0",
+      "react-router-dom": "~5.1.0"
+    },
+    "main": "./lib/components/ShortDescription/index.js"
+  }
